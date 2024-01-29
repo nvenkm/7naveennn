@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         "green-wala": "#D3E97A",
+        "black-wala": "#0a0a0a",
       },
     },
   },
