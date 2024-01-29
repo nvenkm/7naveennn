@@ -31,7 +31,7 @@ const Navbar = () => {
   const possibleClasses = ["block", "hidden", "flex"];
   return (
     <header
-      className={`${bebasNeue.className} py-6 px-[60px] border-b border-solid border-neutral-800`}
+      className={`${bebasNeue.className} py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] border-b border-solid border-neutral-800`}
     >
       <nav className="flex justify-between items-center">
         <div className="text-4xl">Naveen.</div>
