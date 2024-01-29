@@ -7,6 +7,24 @@ import { FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa6";
 
+const contactIcons = [
+  {
+    id: 1,
+    href: "https://github.com/nvenkm",
+    icon: <FaGithub size={30} />,
+  },
+  {
+    id: 1,
+    href: "https://www.linkedin.com/in/7naveennn/",
+    icon: <IoLogoLinkedin size={32} />,
+  },
+  {
+    id: 1,
+    href: "https://www.instagram.com/7naveennn",
+    icon: <FaInstagram size={32} />,
+  },
+];
+
 const Intro = () => {
   return (
     <section
@@ -27,24 +45,24 @@ const Intro = () => {
             </p>
           </div>
           <div className="flex items-center gap-4">
-            <button className="bg-green-wala text-[#0A0A0A] uppercase py-3 px-6 text-xl rounded-full w-fit">
+            <a
+              href="#contact"
+              className="bg-green-wala text-[#0A0A0A] uppercase py-3 px-6 text-xl rounded-full w-fit"
+            >
               Contact Me
-            </button>
+            </a>
 
-            {/* Github Icon */}
-            <span className="text-green-wala bg-[#0A0A0A]">
-              <FaGithub size={30} />
-            </span>
-
-            {/* Linkedin Icon */}
-            <span className="text-green-wala bg-[#0A0A0A]">
-              <IoLogoLinkedin size={32} />
-            </span>
-
-            {/* Instagram */}
-            <span className="text-green-wala bg-[#0A0A0A]">
-              <FaInstagram size={32} />
-            </span>
+            {/* Contact Icons */}
+            {contactIcons.map((icon) => (
+              <a
+                key={icon.id}
+                href={icon.href}
+                target="_blank"
+                className="text-green-wala bg-[#0A0A0A]"
+              >
+                {icon.icon}
+              </a>
+            ))}
           </div>
         </div>
         <div className="w-full md:w-1/2 flex items-center justify-center">
