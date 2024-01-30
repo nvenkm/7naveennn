@@ -1,0 +1,32 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Ticketing Management System",
+    description: `It enables users to create tickets,
+                  assign them to department,
+                  engage in chat conversations, 
+                  upload media files, and close the tickets.It also includes an Admin dashboard with features like filtering,searching,sorting`,
+    imageSrc: "/ticketmaster.png",
+    githubLink: "https://github.com/nvenkm/ticketing-system",
+    liveDeploylink: "https://ticketmaster-yflg.onrender.com/",
+    projectYear: "2023",
+    projectTechnologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Ejs",
+      "Node.js",
+      "MongoDB",
+    ],
+  },
+  {
+    id: 1,
+    title: "Personal Portfolio",
+    description: `This is my personal portfolio website. I created (still creating) using Next.js, Typescript, Tailwind CSS`,
+    imageSrc: "/portfolioimage.png",
+    githubLink: "https://github.com/nvenkm/7naveennn",
+    liveDeploylink: "https://7naveennn.vercel.app",
+    projectYear: "2024",
+    projectTechnologies: ["Next.js", "Tailwind CSS", "Typescript"],
+  },
+];

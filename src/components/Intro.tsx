@@ -3,32 +3,12 @@ const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 import { Inter } from "next/font/google";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
-import { FaGithub } from "react-icons/fa";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { FaInstagram } from "react-icons/fa6";
-
-const contactIcons = [
-  {
-    id: 1,
-    href: "https://github.com/nvenkm",
-    icon: <FaGithub size={30} />,
-  },
-  {
-    id: 1,
-    href: "https://www.linkedin.com/in/7naveennn/",
-    icon: <IoLogoLinkedin size={32} />,
-  },
-  {
-    id: 1,
-    href: "https://www.instagram.com/7naveennn",
-    icon: <FaInstagram size={32} />,
-  },
-];
+import { contactIcons } from "../data/Intro";
 
 const Intro = () => {
   return (
     <section
-      className={`${bebasNeue.className}  border-b border-solid border-neutral-800`}
+      className={`${bebasNeue.className} pb-6  border-b border-solid border-neutral-800`}
     >
       <div className="flex flex-col md:flex-row mx-4 mt-6 gap-4 md:mx-12 lg:mx-28">
         <div className="w-full md:w-1/2 flex flex-col justify-center gap-10">

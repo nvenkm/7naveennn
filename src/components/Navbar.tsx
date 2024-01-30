@@ -6,25 +6,7 @@ const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 import { FaBars } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
-const navItems = [
-  {
-    id: 1,
-    title: "Work",
-    href: "/",
-    additionalStyles: "mt-24 md:mt-auto",
-  },
-  {
-    id: 2,
-    title: "About",
-    href: "/",
-  },
-  {
-    id: 3,
-    title: "Contact",
-    href: "/",
-  },
-];
+import { navItems } from "../data/Navbar";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
