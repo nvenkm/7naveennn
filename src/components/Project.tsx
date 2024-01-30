@@ -2,7 +2,6 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Badge from "./Badge";
-import { promiseHooks } from "v8";
 interface ProjectInterface {
   id: Number;
   title: string;
@@ -17,7 +16,7 @@ interface ProjectInterface {
 const Project = ({ project }: { project: ProjectInterface }) => {
   return (
     <div className="flex flex-col md:flex-row gap-10">
-      <div className="bg-[#1a1a1a] px-7 py-12 rounded-lg md:w-1/2">
+      <div className="bg-[#1a1a1a] flex items-center px-7 py-12 rounded-lg md:w-1/2">
         <Image
           width={1900}
           height={890}

@@ -27,6 +27,6 @@ export const projects = [
     githubLink: "https://github.com/nvenkm/7naveennn",
     liveDeploylink: "https://7naveennn.vercel.app",
     projectYear: "2024",
-    projectTechnologies: ["Next.js", "Tailwind CSS", "Typescript"],
+    projectTechnologies: ["Next.js", "React.js", "Tailwind CSS", "Typescript"],
   },
 ];

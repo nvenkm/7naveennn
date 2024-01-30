@@ -9,7 +9,9 @@ const Projects = () => {
     <section className={`border-b border-solid border-neutral-800`}>
       <div className="flex flex-col mx-4 mt-20 mb-10 gap-4 md:mx-12 lg:mx-28">
         <div className="flex flex-col gap-3 md:w-3/4">
-          <h1 className={`${bebasNeue.className} text-white text-7xl`}>
+          <h1
+            className={`${bebasNeue.className} text-white text-5xl md:text-7xl`}
+          >
             Featured Projects
           </h1>
           <p className="font- text-[#C7C7C7] text-lg leading-7">
