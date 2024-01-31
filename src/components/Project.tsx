@@ -15,8 +15,9 @@ interface ProjectInterface {
 
 const Project = ({ project }: { project: ProjectInterface }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-10">
-      <div className="bg-[#1a1a1a] flex items-center px-7 py-12 rounded-lg md:w-1/2">
+    <div className="flex flex-col md:flex-row gap-10 bg-slate-900 py-5 px-3 md:p-5 rounded-2xl">
+      {/* Project Image */}
+      <div className="bg-slate-800 flex items-center p-3 lg:px-7 lg:py-12 rounded-lg md:w-1/2">
         <Image
           width={1900}
           height={890}
@@ -25,29 +26,32 @@ const Project = ({ project }: { project: ProjectInterface }) => {
           className="rounded-lg"
         />
       </div>
-      <div className="flex flex-col gap-5 justify-center md:w-1/2">
+      <div className="flex flex-col justify-center md:w-1/2 gap-5">
         {/* Project Title and description */}
         <div className="flex flex-col gap-4">
           <h3 className="text-2xl text-white">{project.title}</h3>
           <p>{project.description}</p>
         </div>
+
         {/* Project Info */}
-        <h4 className="p-2 border-b border-solid border-zinc-700">
-          PROJECT INFO
-        </h4>
-        <div className="flex justify-between items-center gap-3 p-2 border-b border-solid border-zinc-700">
-          <p>Year</p>
-          <p>{project.projectYear}</p>
-        </div>
-        <div className="flex justify-between items-center gap-3 p-2 border-b border-solid border-zinc-700">
-          <p>Technologies</p>
-          <div className="flex gap-2 flex-wrap">
-            {project.projectTechnologies.map((tech) => {
-              return <Badge key={tech} title={tech} />;
-            })}
+        <div>
+          <h4 className="p-3 border-b border-solid border-zinc-700">
+            PROJECT INFO
+          </h4>
+          <div className="flex justify-between items-center gap-3 p-3 border-b border-solid border-zinc-700">
+            <p>Year</p>
+            <p>{project.projectYear}</p>
           </div>
+          <div className="flex justify-between items-center gap-3 p-3 border-b border-solid border-zinc-700">
+            <p>Technologies</p>
+            <div className="flex gap-2 flex-wrap">
+              {project.projectTechnologies.map((tech) => {
+                return <Badge key={tech} title={tech} />;
+              })}
+            </div>
+          </div>
+          {/* Live Demo and Github Links */}
         </div>
-        {/* Live Demo and Github Links */}
         <div className="flex gap-5">
           <a
             href={project.liveDeploylink}
