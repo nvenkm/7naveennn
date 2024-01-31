@@ -51,9 +51,7 @@ const Navbar = () => {
                 <a
                   href="#"
                   key={item.id}
-                  className={`hover:text-green-wala transition duration-300 hover:scale-105 ${
-                    item.additionalStyles ? `${item.additionalStyles}` : ""
-                  }`}
+                  className={`hover:text-green-wala transition duration-300 hover:scale-105`}
                 >
                   {item.title}
                 </a>
