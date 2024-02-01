@@ -7,7 +7,7 @@ const Skills = () => {
     <section className={`border-b border-solid border-neutral-800`}>
       <div className="flex flex-col mx-4 mt-20 mb-10 gap-4 md:mx-12 lg:mx-28 md:flex-row">
         {/* Heading */}
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <h1
             className={`${bebasNeue.className} text-white text-5xl md:text-7xl`}
           >
@@ -15,7 +15,7 @@ const Skills = () => {
           </h1>
         </div>
         {/* Skills */}
-        <div className="flex flex-col gap-7 w-1/2">
+        <div className="flex flex-col gap-7 md:w-1/2">
           <p>
             I am always looking to add more skills.Morbi egestas neque eu
             blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at
