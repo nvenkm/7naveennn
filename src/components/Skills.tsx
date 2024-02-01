@@ -47,7 +47,7 @@ const Skills = () => {
                     delay: i / 10,
                   }}
                   key={skill}
-                  className="px-7 py-3 bg-transparent text-white border border-solid border-slate-700 rounded-full"
+                  className="p-2 px-4 md:px-7 md:py-3 bg-transparent text-white border border-solid border-slate-700 rounded-full hover:bg-zinc-900"
                 >
                   {skill}
                 </motion.span>
