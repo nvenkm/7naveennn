@@ -1,11 +1,18 @@
+"use client";
+
 import { bebasNeue } from "./Projects";
 import { skills } from "../data/Skills";
-import Badge from "./Badge";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Skills = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Ensures the animation runs only once when the element is in view
+  });
+
   return (
     <section className={`border-b border-solid border-neutral-800`}>
-      <div className="flex flex-col mx-4 mt-20 mb-10 gap-4 md:mx-12 lg:mx-28 md:flex-row">
+      <div className="flex flex-col mx-4 mt-20 mb-20 gap-4 md:mx-12 lg:mx-28 md:flex-row">
         {/* Heading */}
         <div className="md:w-1/2">
           <h1
@@ -27,13 +34,23 @@ const Skills = () => {
             faucibus tristique ut et dolor.{" "}
           </p>
           <div className="flex flex-wrap gap-2">
-            {skills.map((skill) => {
+            {skills.map((skill, i) => {
               return (
-                <Badge
+                <motion.span
+                  ref={ref}
+                  initial={{ scale: 0 }}
+                  animate={inView ? { scale: 1 } : { scale: 0 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,
+                    delay: i / 10,
+                  }}
                   key={skill}
-                  title={skill}
-                  className="px-7 py-3 bg-transparent text-white border-slate-700 rounded-full "
-                />
+                  className="px-7 py-3 bg-transparent text-white border border-solid border-slate-700 rounded-full"
+                >
+                  {skill}
+                </motion.span>
               );
             })}
           </div>

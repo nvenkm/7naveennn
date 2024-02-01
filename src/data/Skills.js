@@ -8,6 +8,5 @@ export const skills = [
   "Next.js",
   "MongoDB",
   "Socket.io",
-  "Next.js",
   "Typescript",
 ];

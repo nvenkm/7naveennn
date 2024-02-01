@@ -9,12 +9,12 @@ export const contactIcons = [
     icon: <FaGithub size={30} />,
   },
   {
-    id: 1,
+    id: 2,
     href: "https://www.linkedin.com/in/7naveennn/",
     icon: <IoLogoLinkedin size={32} />,
   },
   {
-    id: 1,
+    id: 3,
     href: "https://www.instagram.com/7naveennn",
     icon: <FaInstagram size={32} />,
   },
