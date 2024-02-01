@@ -17,7 +17,7 @@ const Project = ({ project }: { project: ProjectInterface }) => {
   return (
     <div className="flex flex-col md:flex-row gap-10 bg-slate-900 py-5 px-3 md:p-5 rounded-2xl">
       {/* Project Image */}
-      <div className="bg-slate-800 flex items-center p-3 lg:px-7 lg:py-12 rounded-lg md:w-1/2">
+      <div className="bg-slate-800 flex items-center p-3 rounded-lg md:w-1/2">
         <Image
           width={1900}
           height={890}

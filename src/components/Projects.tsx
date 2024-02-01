@@ -1,7 +1,7 @@
 import React from "react";
 import { Bebas_Neue } from "next/font/google";
 import Project from "./Project";
-const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
+export const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 import { projects } from "../data/Projects";
 
 const Projects = () => {
