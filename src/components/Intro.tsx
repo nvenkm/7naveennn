@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 import { contactIcons } from "../data/Intro";
+import SectionHeading from "./SectionHeading";
 
 const Intro = () => {
   return (
@@ -13,10 +14,9 @@ const Intro = () => {
       <div className="flex flex-col md:flex-row mx-4 mt-6 gap-4 md:mx-12 lg:mx-28">
         <div className="w-full md:w-1/2 flex flex-col justify-center gap-10">
           <div>
-            <h1 className="uppercase text-white text-4xl md:text-6xl lg:text-8xl font-normal">
-              hi, i am <br />
-              Naveen Kumar.
-            </h1>
+            <SectionHeading className="uppercase text-4xl md:text-6xl lg:text-8xl">
+              Hi, I am <br /> Naveen Kumar
+            </SectionHeading>
             <p
               className={`${inter.className} text-stone-300 text-base md:text-md font-normal leading-[27px]`}
             >
