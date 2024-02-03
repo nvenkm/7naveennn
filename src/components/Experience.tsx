@@ -9,16 +9,22 @@ import "react-vertical-timeline-component/style.min.css";
 import { MdWork } from "react-icons/md";
 import SectionHeading from "./SectionHeading";
 import Section from "./Section";
+import { useInView } from "react-intersection-observer";
 
 const Experience = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <Section divClassName="md:flex-col">
       {/* Heading */}
       <SectionHeading title="My Experience" className="text-center" />
-      <div className="mt-8">
+      <div ref={ref} className="mt-8">
         <VerticalTimeline>
           <VerticalTimelineElement
             className=""
+            visible={inView}
             contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             contentArrowStyle={{
               borderRight: "7px solid  rgb(33, 150, 243)",
@@ -36,6 +42,7 @@ const Experience = () => {
             <p>React, Next.js 14, Typescript, Jotai, MongoDB</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
+            visible={inView}
             className="text-slate-300"
             contentStyle={{
               backgroundColor: "#0f172a",
