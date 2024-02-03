@@ -14,3 +14,31 @@ body {
 .is-hidden {
   visibility: visible !important;
 } */
+
+/* html,
+body {
+  overflow-x: hidden;
+} */
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    visibility: visible;
+    animation: timeline-slide 0.6s;
+  }
+}
+
+@keyframes timeline-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
