@@ -13,7 +13,7 @@ const Projects = () => {
         <SectionHeading title="Featured Projects" />
         <p className="font- text-[#C7C7C7] text-lg leading-7">
           Here are some of the selected projects that showcase my passion for
-          front-end development.
+          Full Stack development.
         </p>
       </div>
       {/* Projects in this div */}

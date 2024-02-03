@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* Experience Section */}
       <Experience />
+
+      {/* Contact Section */}
+      <Contact />
     </div>
   );
 }
