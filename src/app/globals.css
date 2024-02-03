@@ -22,23 +22,23 @@ body {
 
 @media only screen and (max-width: 1169px) {
   .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    visibility: visible;
-    animation: timeline-slide 0.6s;
+    visibility: visible !important;
+    animation: timeline-slide 0.6s !important;
   }
 }
 
 @keyframes timeline-slide {
   0% {
-    opacity: 0;
-    transform: translateY(-50px);
+    opacity: 0 !important;
+    transform: translateY(-50px) !important;
   }
 
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) !important;
   }
 }
