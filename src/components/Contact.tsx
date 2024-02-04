@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <Section divClassName="mt-14">
+    <Section id="contact" divClassName="">
       <div className="w-full md:w-1/2 flex flex-col gap-5">
         <SectionHeading
           className="text-center md:text-left"
@@ -40,10 +40,19 @@ const Contact = () => {
 
           {/* Contact buttons */}
           <div className="flex gap-8 text-3xl justify-center md:justify-start text-green-wala">
-            <IoLogoLinkedin />
-            <FaGithub />
-            <FaXTwitter />
-            <FaInstagram />
+            <a href="https://www.linkedin.com/in/7naveennn/" target="_blank">
+              <IoLogoLinkedin />
+            </a>
+
+            <a href="https://github.com/nvenkm" target="_blank">
+              <FaGithub />
+            </a>
+            <a href="https://twitter.com/7naveennn" target="_blank">
+              <FaXTwitter />
+            </a>
+            <a href="https://www.instagram.com/7naveennn" target="_blank">
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>

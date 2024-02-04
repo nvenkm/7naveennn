@@ -13,11 +13,12 @@ const Navbar = () => {
   const possibleClasses = ["block", "hidden", "flex"];
   return (
     <header
-      className={`${bebasNeue.className} py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] border-b border-solid border-neutral-800`}
+      className={`${bebasNeue.className} fixed w-screen md:static bg-opacity-50 backdrop-blur-lg z-50 bg-black-wala p-4 md:w-auto py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] border-b border-solid border-neutral-800`}
     >
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between  items-center">
         <div className="text-4xl">Naveen.</div>
         <div>
+          {/* Navbar for small screens */}
           <AnimatePresence>
             {isOpen && (
               <motion.ul
@@ -32,7 +33,10 @@ const Navbar = () => {
                 {navItems.map((item) => {
                   return (
                     <a
-                      href="#"
+                      onClick={() => {
+                        setIsOpen(!isOpen);
+                      }}
+                      href={item.href}
                       key={item.id}
                       className={`hover:text-green-wala duration-300 hover:scale-105 ${
                         item.additionalStyles ? `${item.additionalStyles}` : ""
@@ -45,13 +49,15 @@ const Navbar = () => {
               </motion.ul>
             )}
           </AnimatePresence>
+
+          {/* Navbar for large screens */}
           <ul
             className={`hidden md:flex md:static md:h-auto md:flex-row md:text-2xl md:w-auto gap-8 md:items-start`}
           >
             {navItems.map((item) => {
               return (
                 <a
-                  href="#"
+                  href={item.href}
                   key={item.id}
                   className={`hover:text-green-wala transition duration-300 hover:scale-105`}
                 >
@@ -60,6 +66,8 @@ const Navbar = () => {
               );
             })}
           </ul>
+
+          {/* Button to toggle navbar at small screens */}
           <button
             className="md:hidden"
             onClick={() => {

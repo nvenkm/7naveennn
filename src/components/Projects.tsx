@@ -8,7 +8,7 @@ import Section from "./Section";
 
 const Projects = () => {
   return (
-    <Section divClassName="md:mx-12 lg:mx-28 md:flex-col">
+    <Section id="projects" divClassName="md:mx-12 lg:mx-28 md:flex-col">
       <div className="flex flex-col gap-3 md:w-3/4">
         <SectionHeading
           className="text-center md:text-left"

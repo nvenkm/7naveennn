@@ -13,7 +13,8 @@ import Section from "./Section";
 const Intro = () => {
   return (
     <Section
-      divClassName="flex flex-col md:flex-row mx-4 mt-6 gap-4 md:mx-12 lg:mx-28"
+      id="section"
+      divClassName="flex flex-col md:flex-row mx-4 pt-[100px] md:pt-5 gap-4 md:mx-12 lg:mx-28"
       className={`${bebasNeue.className} pb-6  border-b border-solid border-neutral-800`}
     >
       <div className="w-full md:w-1/2 flex flex-col justify-center gap-10">

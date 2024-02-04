@@ -17,7 +17,7 @@ const Experience = () => {
   });
 
   return (
-    <Section divClassName="md:flex-col">
+    <Section id="experience" divClassName="md:flex-col">
       {/* Heading */}
       <SectionHeading title="My Experience" className="text-center" />
       <div ref={ref} className="mt-8">

@@ -13,7 +13,7 @@ const Skills = () => {
   });
 
   return (
-    <Section>
+    <Section id="skills">
       {/* Heading */}
       <div className="md:w-1/2">
         <SectionHeading
