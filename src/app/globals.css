@@ -7,6 +7,9 @@ body {
   color: #c7c7c7;
 }
 
+html {
+  cursor: url("../../public/umbrellaicon.png"), auto;
+}
 /* 
 html,
 body {
