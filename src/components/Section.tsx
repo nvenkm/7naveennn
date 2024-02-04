@@ -21,7 +21,10 @@ const Section = ({
   return (
     <motion.section
       id={id}
-      className={twMerge("border-b border-solid border-neutral-800", className)}
+      className={twMerge(
+        "border-b  scroll-mt-24 md:scroll-mt-10  border-solid border-neutral-800",
+        className
+      )}
     >
       <motion.div
         ref={ref}
@@ -29,7 +32,7 @@ const Section = ({
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 0.6 }}
         className={twMerge(
-          "flex flex-col mx-4 pt-28 md:pt-20 mb-20 gap-4 md:mx-12 lg:mx-28 md:flex-row",
+          "flex flex-col mx-4 pt-12 md:pt-14 mb-12 gap-4 md:mx-12 lg:mx-28 md:flex-row",
           divClassName
         )}
       >

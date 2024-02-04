@@ -1,5 +1,6 @@
 import React from "react";
 import GreenButton from "./GreenButton";
+import { IoIosSend } from "react-icons/io";
 
 const ContactForm = () => {
   return (
@@ -46,10 +47,13 @@ const ContactForm = () => {
         ></textarea>
       </FormFieldContainer>
 
-      <input
+      <a
         type="submit"
-        className="bg-green-wala cursor-pointer uppercase md:w-fit p-2 px-3 text-black-wala rounded-md  "
-      />
+        className="bg-green-wala cursor-pointer font-medium w-fit p-2 px-3 text-black-wala rounded-md flex items-center gap-1 "
+      >
+        <span>Send</span>
+        <IoIosSend size={23} />
+      </a>
     </form>
   );
 };
