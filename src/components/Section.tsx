@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Section = ({
   children,
@@ -10,8 +13,15 @@ const Section = ({
   className?: string;
   divClassName?: string;
 }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
   return (
-    <section
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+      transition={{ duration: 0.6 }}
       className={twMerge("border-b border-solid border-neutral-800", className)}
     >
       <div
@@ -22,7 +32,7 @@ const Section = ({
       >
         {children}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
