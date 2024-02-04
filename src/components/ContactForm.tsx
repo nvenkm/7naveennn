@@ -49,10 +49,13 @@ const ContactForm = () => {
 
       <a
         type="submit"
-        className="bg-green-wala cursor-pointer font-medium w-fit p-2 px-3 text-black-wala rounded-md flex items-center gap-1 "
+        className="bg-green-wala group cursor-pointer font-medium w-fit p-2 px-3 text-black-wala rounded-md flex items-center gap-1 "
       >
         <span>Send</span>
-        <IoIosSend size={23} />
+        <IoIosSend
+          size={23}
+          className="group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:rotate-[360deg] transition duration-300"
+        />
       </a>
     </form>
   );

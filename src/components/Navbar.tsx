@@ -3,10 +3,11 @@
 import { Bebas_Neue } from "next/font/google";
 import { useState } from "react";
 const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { navItems } from "../data/Navbar";
+import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,9 @@ const Navbar = () => {
       className={`${bebasNeue.className} fixed w-screen md:static bg-opacity-50 backdrop-blur-lg z-50 bg-black-wala p-4 md:w-auto py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] border-b border-solid border-neutral-800`}
     >
       <nav className="flex justify-between  items-center">
-        <div className="text-4xl">Naveen.</div>
+        <a href="#" className="text-4xl">
+          Naveen.
+        </a>
         <div>
           {/* Navbar for small screens */}
           <AnimatePresence>
@@ -69,12 +72,26 @@ const Navbar = () => {
 
           {/* Button to toggle navbar at small screens */}
           <button
-            className="md:hidden"
+            className="md:hidden transition duration-300 ease-in-out transform hover:scale-110"
             onClick={() => {
               setIsOpen(!isOpen);
             }}
           >
-            <FaBars size={25} />
+            {isOpen ? (
+              <span>
+                <FaTimes
+                  size={25}
+                  className="transition duration-300 ease-in-out transform hover:scale-110"
+                />
+              </span>
+            ) : (
+              <span>
+                <FaBars
+                  size={25}
+                  className="transition duration-300 ease-in-out transform hover:scale-110"
+                />
+              </span>
+            )}
           </button>
         </div>
       </nav>
