@@ -29,7 +29,7 @@ const Section = ({
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
         transition={{ duration: 0.6 }}
         className={twMerge(
-          "flex flex-col mx-4 pt-20 mb-20 gap-4 md:mx-12 lg:mx-28 md:flex-row",
+          "flex flex-col mx-4 pt-28 md:pt-20 mb-20 gap-4 md:mx-12 lg:mx-28 md:flex-row",
           divClassName
         )}
       >

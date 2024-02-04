@@ -28,7 +28,7 @@ const Navbar = () => {
                   scaleY: 0,
                   transition: { duration: 0.3 },
                 }}
-                className={`flex origin-top absolute top-[91px] left-0 flex-col text-6xl bg-black-wala w-screen h-[86vh] items-center overflow-x-hidden overflow-y-hidden md:hidden gap-8`}
+                className={`flex  origin-top absolute top-[87px] left-0 flex-col text-6xl bg-black-wala w-screen h-screen items-center overflow-x-hidden overflow-y-hidden md:hidden gap-8`}
               >
                 {navItems.map((item) => {
                   return (
