@@ -16,11 +16,14 @@ const Skills = () => {
     <Section>
       {/* Heading */}
       <div className="md:w-1/2">
-        <SectionHeading title="My Capabilities" />
+        <SectionHeading
+          className="text-center md:text-left"
+          title="My Capabilities"
+        />
       </div>
       {/* Skills */}
       <div className="flex flex-col gap-7 md:w-1/2">
-        <p>
+        <p className="text-center md:text-left">
           I am always looking to add more skills.Morbi egestas neque eu blandit
           fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at Lorem ipsum
           dolor sit, amet consectetur adipisicing elit. Cumque, veniam eius ad
@@ -30,7 +33,7 @@ const Skills = () => {
           nesciunt sint? Sit quae iure qui. purus faucibus tristique ut et
           dolor.{" "}
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap justify-center gap-2">
           {skills.map((skill, i) => {
             return (
               <motion.span

@@ -10,8 +10,11 @@ const Projects = () => {
   return (
     <Section divClassName="md:mx-12 lg:mx-28 md:flex-col">
       <div className="flex flex-col gap-3 md:w-3/4">
-        <SectionHeading title="Featured Projects" />
-        <p className="font- text-[#C7C7C7] text-lg leading-7">
+        <SectionHeading
+          className="text-center md:text-left"
+          title="Featured Projects"
+        />
+        <p className="text-center md:text-left text-[#C7C7C7] text-lg leading-7">
           Here are some of the selected projects that showcase my passion for
           Full Stack development.
         </p>

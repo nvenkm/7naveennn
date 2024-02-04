@@ -11,10 +11,13 @@ const Contact = () => {
   return (
     <Section divClassName="mt-14">
       <div className="w-full md:w-1/2 flex flex-col gap-5">
-        <SectionHeading title="Contact Me" />
+        <SectionHeading
+          className="text-center md:text-left"
+          title="Contact Me"
+        />
         <div className="flex flex-col gap-10">
           {/* Email and resume */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col text-center md:text-left gap-2">
             <p>
               Say Hello at{" "}
               <a
@@ -36,7 +39,7 @@ const Contact = () => {
           </div>
 
           {/* Contact buttons */}
-          <div className="flex gap-8 text-3xl text-green-wala">
+          <div className="flex gap-8 text-3xl justify-center md:justify-start text-green-wala">
             <IoLogoLinkedin />
             <FaGithub />
             <FaXTwitter />

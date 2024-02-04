@@ -48,7 +48,7 @@ const ContactForm = () => {
 
       <input
         type="submit"
-        className="bg-green-wala cursor-pointer uppercase w-fit p-2 px-3 text-black-wala rounded-md  "
+        className="bg-green-wala cursor-pointer uppercase md:w-fit p-2 px-3 text-black-wala rounded-md  "
       />
     </form>
   );
