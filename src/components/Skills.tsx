@@ -24,14 +24,11 @@ const Skills = () => {
       {/* Skills */}
       <div className="flex flex-col gap-7 md:w-1/2">
         <p className="text-center md:text-left">
-          I am always looking to add more skills.Morbi egestas neque eu blandit
-          fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Cumque, veniam eius ad
-          accusantium quae corporis maxime libero distinctio itaque dolorem
-          beatae reiciendis atque asperiores blanditiis? Odit, corrupti ab vel
-          accusamus magni placeat qui atque facilis facere suscipit, nulla, eius
-          nesciunt sint? Sit quae iure qui. purus faucibus tristique ut et
-          dolor.{" "}
+          I am always looking to add more skills. With a passion for innovation
+          and a dedication to delivering high-quality solutions, I am committed
+          to staying updated with the latest technologies and best practices in
+          software development to provide clients with cutting-edge solutions
+          that meet their unique needs and requirements.{" "}
         </p>
         <div className="flex flex-wrap justify-center gap-2">
           {skills.map((skill, i) => {
