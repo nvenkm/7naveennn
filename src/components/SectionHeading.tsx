@@ -14,7 +14,7 @@ const SectionHeading = ({
   return (
     <h1
       className={twMerge(
-        `${bebasNeue.className} text-white text-5xl md:text-7xl`,
+        `${bebasNeue.className} text-black-wala dark:text-white text-5xl md:text-7xl`,
         className
       )}
     >

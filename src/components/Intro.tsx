@@ -23,7 +23,7 @@ const Intro = () => {
             Hi, I am <br /> Naveen Kumar
           </SectionHeading>
           <p
-            className={`${inter.className} text-stone-300 text-base md:text-md font-normal leading-[27px]`}
+            className={`${inter.className} text-black-wala dark:text-stone-300 text-base md:text-md font-normal leading-[27px]`}
           >
             An India based Full Stack developer passionate about building
             accessible and user friendly websites.
@@ -38,7 +38,7 @@ const Intro = () => {
               key={icon.id}
               href={icon.href}
               target="_blank"
-              className="text-green-wala bg-[#0A0A0A]"
+              className="dark:text-green-wala dark:bg-[#0A0A0A]"
             >
               {icon.icon}
             </a>

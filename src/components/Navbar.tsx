@@ -8,19 +8,21 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { navItems } from "../data/Navbar";
 import { GrClose } from "react-icons/gr";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const possibleClasses = ["block", "hidden", "flex"];
   return (
     <header
-      className={`${bebasNeue.className} fixed w-screen md:static bg-opacity-50 backdrop-blur-lg z-50 bg-black-wala p-4 md:w-auto py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] border-b border-solid border-neutral-800`}
+      className={`${bebasNeue.className} fixed w-screen md:static dark:bg-opacity-50 dark:backdrop-blur-lg z-50 bg-white dark:bg-black-wala p-4 md:w-auto py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] border-b border-solid dark:border-neutral-800`}
     >
       <nav className="flex justify-between  items-center">
         <a href="#" className="text-4xl">
           Naveen.
         </a>
-        <div>
+        <div className="flex gap-5">
+          <ThemeSwitch />
           {/* Navbar for small screens */}
           <AnimatePresence>
             {isOpen && (
@@ -31,7 +33,7 @@ const Navbar = () => {
                   scaleY: 0,
                   transition: { duration: 0.3 },
                 }}
-                className={`flex  origin-top absolute top-[87px] left-0 flex-col text-6xl bg-black-wala w-screen h-screen items-center overflow-x-hidden overflow-y-hidden md:hidden gap-8`}
+                className={`flex  origin-top absolute top-[89px] left-0 flex-col dark:text-white-wala text-6xl bg-white dark:bg-black-wala w-screen h-screen items-center overflow-x-hidden overflow-y-hidden md:hidden gap-8`}
               >
                 {navItems.map((item) => {
                   return (
@@ -41,7 +43,7 @@ const Navbar = () => {
                       }}
                       href={item.href}
                       key={item.id}
-                      className={`hover:text-green-wala duration-300 hover:scale-105 ${
+                      className={`dark:hover:text-green-wala duration-300 hover:scale-105 ${
                         item.additionalStyles ? `${item.additionalStyles}` : ""
                       }`}
                     >

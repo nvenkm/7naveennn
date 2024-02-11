@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -16,6 +17,9 @@ const config: Config = {
       colors: {
         "green-wala": "#D3E97A",
         "black-wala": "#0a0a0a",
+        "white-wala": "#f5f5f5",
+        "black-text": "#0a0a0a",
+        "cards-bg": "#e0e0e0",
       },
     },
   },

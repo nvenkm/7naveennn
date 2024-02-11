@@ -84,7 +84,7 @@ const ContactForm = () => {
           id="name"
           name="senderName"
           autoComplete="off"
-          className="bg-[#555555] rounded-md p-2 w-full text-white"
+          className="dark:bg-[#555555] bg-gray-200 rounded-md p-2 w-full text-black-wala dark:text-white"
         />
       </FormFieldContainer>
 
@@ -95,7 +95,7 @@ const ContactForm = () => {
           autoComplete="off"
           name="senderEmail"
           id="email"
-          className="bg-[#555555] rounded-md p-2 w-full text-white"
+          className="dark:bg-[#555555] bg-gray-200 rounded-md p-2 w-full text-black-wala dark:text-white"
         />
       </FormFieldContainer>
 
@@ -106,7 +106,7 @@ const ContactForm = () => {
           name="subject"
           autoComplete="off"
           id="subject"
-          className="bg-[#555555] rounded-md p-2 w-full text-white"
+          className="dark:bg-[#555555] bg-gray-200 rounded-md p-2 w-full text-black-wala dark:text-white"
         />
       </FormFieldContainer>
 
@@ -116,7 +116,7 @@ const ContactForm = () => {
           name="message"
           id="message"
           autoComplete="off"
-          className="bg-[#555555] rounded-md p-2 w-full text-white"
+          className="dark:bg-[#555555] bg-gray-200 rounded-md p-2 w-full text-black-wala dark:text-white"
           cols={30}
           rows={10}
         ></textarea>

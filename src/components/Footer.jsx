@@ -9,7 +9,7 @@ const Footer = () => {
     >
       <p className="text-center w-full ">&copy; Naveen. All rights reserved.</p>
       <p className="w-full text-center">
-        <span className="font-medium text-sm w-full text-white">
+        <span className="font-medium text-sm w-full dark:text-white text-black-wala">
           About this website :{" "}
         </span>
         Built with React.js & Next.js (App router & Server Actions),
@@ -18,7 +18,7 @@ const Footer = () => {
       <a
         href="https://github.com/nvenkm/7naveennn"
         target="_blank"
-        className="mt-2 text-green-wala hover:border-b border-solid border-green-wala w-fit"
+        className="mt-2 dark:text-green-wala hover:border-b border-solid dark:border-green-wala border-black-wala w-fit"
       >
         Github&nbsp;Link&nbsp;for&nbsp;the&nbsp;repo
       </a>

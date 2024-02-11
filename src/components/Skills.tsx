@@ -17,7 +17,7 @@ const Skills = () => {
       {/* Heading */}
       <div className="md:w-1/2">
         <SectionHeading
-          className="text-center md:text-left"
+          className="text-center md:text-left "
           title="My Capabilities"
         />
       </div>
@@ -44,7 +44,7 @@ const Skills = () => {
                   delay: i / 10,
                 }}
                 key={skill}
-                className="p-2 px-4 md:px-7 md:py-3 bg-transparent text-white border border-solid border-slate-700 rounded-full hover:bg-zinc-900"
+                className="p-2 px-4 md:px-7 md:py-3 bg-transparent dark:dark:text-white border border-solid border-slate-950 dark:border-slate-700 rounded-full dark:hover:bg-zinc-900"
               >
                 {skill}
               </motion.span>

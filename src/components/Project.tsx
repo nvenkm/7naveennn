@@ -15,9 +15,9 @@ interface ProjectInterface {
 
 const Project = ({ project }: { project: ProjectInterface }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 bg-slate-900 py-5 px-3 md:p-5 rounded-2xl">
+    <div className="flex flex-col md:flex-row gap-10 dark:bg-slate-900 bg-slate-100 py-5 px-3 md:p-5 rounded-2xl">
       {/* Project Image */}
-      <div className="bg-slate-800 flex items-center p-3 rounded-lg md:w-1/2">
+      <div className="dark:bg-slate-800 flex items-center p-3 rounded-lg md:w-1/2">
         <Image
           width={1900}
           height={890}
@@ -29,7 +29,9 @@ const Project = ({ project }: { project: ProjectInterface }) => {
       <div className="flex flex-col justify-center md:w-1/2 gap-5">
         {/* Project Title and description */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-2xl text-white">{project.title}</h3>
+          <h3 className="text-2xl dark:text-white text-black-wala">
+            {project.title}
+          </h3>
           <p>{project.description}</p>
         </div>
 
@@ -56,7 +58,7 @@ const Project = ({ project }: { project: ProjectInterface }) => {
           <a
             href={project.liveDeploylink}
             target="_blank"
-            className="flex gap-3 items-center text-green-wala underline underline-offset-4"
+            className="flex gap-3 items-center dark:text-green-wala underline underline-offset-4"
           >
             <span>Live Demo</span>
             <FaExternalLinkAlt size={20} />
@@ -64,7 +66,7 @@ const Project = ({ project }: { project: ProjectInterface }) => {
           <a
             href={project.githubLink}
             target="_blank"
-            className="flex gap-3 items-center text-green-wala underline underline-offset-4"
+            className="flex gap-3 items-center dark:text-green-wala underline underline-offset-4"
           >
             <span>Github Link</span>
             <FaGithub size={23} />

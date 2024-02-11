@@ -17,7 +17,7 @@ const GreenButton = ({
       type={type}
       href={href}
       className={twMerge(
-        "bg-green-wala text-black-wala uppercase py-3 px-6 text-xl rounded-full w-fit",
+        "dark:bg-green-wala dark:text-black-wala border border-solid border-black-wala uppercase py-3 px-6 text-xl rounded-full w-fit",
         className
       )}
     >

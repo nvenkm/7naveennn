@@ -14,7 +14,7 @@ const Projects = () => {
           className="text-center md:text-left"
           title="Featured Projects"
         />
-        <p className="text-center md:text-left text-[#C7C7C7] text-lg leading-7">
+        <p className="text-center md:text-left text-black-wala dark:text-[#C7C7C7] text-lg leading-7">
           Here are some of the selected projects that showcase my passion for
           Full Stack development.
         </p>

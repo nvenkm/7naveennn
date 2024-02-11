@@ -22,7 +22,7 @@ const Contact = () => {
               Say Hello at{" "}
               <a
                 href=""
-                className="text-green-wala border-b pb-[1px] border-solid border-green-wala"
+                className="dark:text-green-wala border-b pb-[1px] border-solid dark:border-green-wala border-black-wala"
               >
                 7naveennn@gmail.com
               </a>
@@ -30,7 +30,7 @@ const Contact = () => {
             <p>
               For more info, here&apos;s my{" "}
               <a
-                className="text-green-wala border-b pb-[1px] border-solid border-green-wala"
+                className="dark:text-green-wala border-b pb-[1px] border-solid dark:border-green-wala border-black-wala"
                 href=""
               >
                 Resume
@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
 
           {/* Contact buttons */}
-          <div className="flex gap-8 text-3xl justify-center md:justify-start text-green-wala">
+          <div className="flex gap-8 text-3xl justify-center md:justify-start dark:text-green-wala">
             <a href="https://www.linkedin.com/in/7naveennn/" target="_blank">
               <IoLogoLinkedin />
             </a>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "@/components/ScrollToTop";
+import ThemeContextProvider from "@/context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,13 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body id="top" className={`${inter.className} relative`}>
-        <>
-          {children}
-
+      <body
+        id="top"
+        className={`${inter.className} relative bg-white text-black-wala  dark:bg-black-wala dark:text-[#c7c7c7]`}
+      >
+        <ThemeContextProvider>
+          <>{children}</>
           {/* Scroll to top */}
-        </>
-        <ScrollToTop />
+          <ScrollToTop />
+        </ThemeContextProvider>
       </body>
     </html>
   );

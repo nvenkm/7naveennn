@@ -10,18 +10,22 @@ import { MdWork } from "react-icons/md";
 import SectionHeading from "./SectionHeading";
 import Section from "./Section";
 import { useInView } from "react-intersection-observer";
+import { useTheme } from "@/context/ThemeContext";
 
 const Experience = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
+  const { theme } = useTheme();
 
   return (
     <Section id="experience" divClassName="md:flex-col">
       {/* Heading */}
       <SectionHeading title="My Experience" className="text-center" />
       <div ref={ref} className="mt-8">
-        <VerticalTimeline>
+        <VerticalTimeline
+          lineColor={`${theme === "light" ? `black` : "white"}`}
+        >
           <VerticalTimelineElement
             className=""
             visible={inView}
@@ -30,6 +34,7 @@ const Experience = () => {
               borderRight: "7px solid  rgb(33, 150, 243)",
             }}
             date="Nov 2023 - present"
+            dateClassName="dark:text-white text-black"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<MdWork />}
           >
@@ -48,6 +53,7 @@ const Experience = () => {
               backgroundColor: "#0f172a",
             }}
             date="July 2023 - Nov 2023"
+            dateClassName="dark:text-white text-black"
             iconStyle={{
               background: "#0f172a",
               color: "#fff",
