@@ -20,7 +20,7 @@ const Projects = () => {
         </p>
       </div>
       {/* Projects in this div */}
-      <div className="mt-24 flex flex-col gap-20 md:gap-20">
+      <div className="mt-24 flex flex-wrap gap-8 justify-center">
         {projects.map((project) => {
           return <Project key={project.id} project={project} />;
         })}

@@ -15,9 +15,9 @@ interface ProjectInterface {
 
 const Project = ({ project }: { project: ProjectInterface }) => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 dark:bg-slate-900 bg-slate-100 py-5 px-3 md:p-5 rounded-2xl">
+    <div className="flex md:max-w-[45%] flex-col gap-5 dark:bg-slate-900 bg-slate-100 py-5 px-3 md:p-5 rounded-2xl">
       {/* Project Image */}
-      <div className="dark:bg-slate-800 flex items-center p-3 rounded-lg md:w-1/2">
+      <div className="dark:bg-slate-800 flex items-center p-3 rounded-lg">
         <Image
           width={1900}
           height={890}
@@ -26,7 +26,7 @@ const Project = ({ project }: { project: ProjectInterface }) => {
           className="rounded-lg"
         />
       </div>
-      <div className="flex flex-col justify-center md:w-1/2 gap-5">
+      <div className="flex flex-col justify-center gap-5">
         {/* Project Title and description */}
         <div className="flex flex-col gap-4">
           <h3 className="text-2xl dark:text-white text-black-wala">
