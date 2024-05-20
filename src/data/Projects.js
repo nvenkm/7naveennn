@@ -23,7 +23,7 @@ export const projects = [
     description: `This is my personal portfolio website. I created (still creating) using Next.js, Typescript, Tailwind CSS`,
     imageSrc: "/portfolioimage.png",
     githubLink: "https://github.com/nvenkm/7naveennn",
-    liveDeploylink: "https://portfolio.naveeen.io",
+    liveDeploylink: "https://naveeen.io",
     projectYear: "2024",
     projectTechnologies: ["Next.js", "React.js", "Tailwind CSS", "Typescript"],
   },
