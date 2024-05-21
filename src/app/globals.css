@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  cursor: url("../../public/umbrellaicon.png"), auto;
+  cursor: url("../../public/fingercursor.png"), auto;
 }
 /* 
 html,

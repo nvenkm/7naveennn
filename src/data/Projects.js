@@ -19,12 +19,22 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Personal Portfolio",
-    description: `This is my personal portfolio website. I created (still creating) using Next.js, Typescript, Tailwind CSS`,
-    imageSrc: "/portfolioimage.png",
-    githubLink: "https://github.com/nvenkm/7naveennn",
-    liveDeploylink: "https://naveeen.io",
+    title: "Get Responses",
+    description: `This is a project built using Next.js and deployed on Vercel. It is a simple web application that allows users to get anonymous responses from people.`,
+    imageSrc: "/getresponsesimage.png",
+    githubLink:
+      "https://github.com/nvenkm/https://github.com/nvenkm/mystery-message",
+    liveDeploylink: "https://getresponses.naveeen.io",
     projectYear: "2024",
-    projectTechnologies: ["Next.js", "React.js", "Tailwind CSS", "Typescript"],
+    projectTechnologies: [
+      "Next.js",
+      "next-auth",
+      "Tailwind CSS",
+      "Typescript",
+      "Nodemailer",
+      "Recoil",
+      "Zod",
+      "MongoDB",
+    ],
   },
 ];
