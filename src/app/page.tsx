@@ -10,9 +10,6 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <div className="">
-      {/* Navbar */}
-      <Navbar />
-
       {/* Intro section */}
       <Intro />
 
@@ -27,9 +24,6 @@ export default function Home() {
 
       {/* Contact Section */}
       <Contact />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

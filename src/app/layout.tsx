@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "@/components/ScrollToTop";
 import ThemeContextProvider from "@/context/ThemeContext";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +25,10 @@ export default function RootLayout({
         className={`${inter.className} relative bg-white text-black-wala  dark:bg-black-wala dark:text-[#c7c7c7]`}
       >
         <ThemeContextProvider>
+          <Navbar />
           <>{children}</>
+          {/* Footer */}
+          <Footer />
           {/* Scroll to top */}
           <ScrollToTop />
         </ThemeContextProvider>

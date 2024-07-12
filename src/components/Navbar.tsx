@@ -6,16 +6,26 @@ const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { navItems } from "../data/Navbar";
+import { apps, navItems } from "../data/Navbar";
 import { GrClose } from "react-icons/gr";
 import ThemeSwitch from "./ThemeSwitch";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { BiDownArrow } from "react-icons/bi";
+import { FaChevronDown } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const possibleClasses = ["block", "hidden", "flex"];
   return (
     <header
-      className={`${bebasNeue.className} fixed w-screen md:static dark:bg-opacity-50 dark:backdrop-blur-lg z-50 bg-white dark:bg-black-wala p-4 md:w-auto py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] border-b border-solid dark:border-neutral-800`}
+      className={`${bebasNeue.className} fixed w-screen md:static dark:bg-opacity-50 dark:backdrop-blur-lg z-50 bg-white dark:bg-black-wala p-4 md:w-auto py-6 max-[420px]:px-[20px] px-[40px] md:px-[60px] lg:px-24 border-b border-solid dark:border-neutral-800`}
     >
       <nav className="flex justify-between  items-center">
         <a href="#" className="text-4xl">
@@ -61,15 +71,31 @@ const Navbar = () => {
           >
             {navItems.map((item) => {
               return (
-                <a
+                <Link
                   href={item.href}
                   key={item.id}
                   className={`hover:text-green-wala transition duration-300 hover:scale-105`}
                 >
                   {item.title}
-                </a>
+                </Link>
               );
             })}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-2 bg-green-wala px-2 text-black-text rounded-sm">
+                Apps <FaChevronDown size={15} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuLabel>Some Extra Apps</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                {apps.map((app) => {
+                  return (
+                    <DropdownMenuItem key={app.id}>
+                      <Link href={app.href}>{app.title}</Link>
+                    </DropdownMenuItem>
+                  );
+                })}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </ul>
 
           {/* Button to toggle navbar at small screens */}
