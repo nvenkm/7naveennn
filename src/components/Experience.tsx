@@ -64,6 +64,7 @@ const Experience = () => {
             visible={inView}
             contentStyle={{
               backgroundColor: "#0f172a",
+              color: "#fff",
             }}
             date="Nov 2023 - May 2024"
             dateClassName="dark:text-white text-black"
