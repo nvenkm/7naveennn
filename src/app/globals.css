@@ -102,3 +102,7 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+.vertical-timeline-element-date {
+  opacity: 1 !important;
+}

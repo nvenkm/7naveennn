@@ -44,7 +44,7 @@ const Experience = () => {
             contentStyle={blueContentStyle}
             contentArrowStyle={blueContentArrowStyle}
             date="December 2024 - Present"
-            dateClassName="dark:text-white text-black"
+            dateClassName="text-white md:text-black dark:text-white"
             iconStyle={blueIconStyle}
             icon={<MdWork />}
           >
@@ -73,7 +73,7 @@ const Experience = () => {
             contentStyle={blackContentStyle}
             contentArrowStyle={blackContentArrowStyle}
             date="July 2024 - December 2024"
-            dateClassName="dark:text-white text-black"
+            dateClassName="text-white md:text-black dark:text-white"
             iconStyle={blackIconStyle}
             icon={<MdWork />}
           >
@@ -101,7 +101,7 @@ const Experience = () => {
             visible={inView}
             contentStyle={blueContentStyle}
             date="Nov 2023 - May 2024"
-            dateClassName="dark:text-white text-black"
+            dateClassName="text-white md:text-black dark:text-white"
             iconStyle={blueIconStyle}
             contentArrowStyle={blueContentArrowStyle}
             icon={<MdWork />}

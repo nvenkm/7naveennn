@@ -34,7 +34,8 @@ const Contact = () => {
               For more info, here&apos;s my{" "}
               <a
                 className="dark:text-green-wala border-b pb-[1px] border-solid dark:border-green-wala border-black-wala"
-                href=""
+                href="/Naveen_Resume.pdf"
+                target="_blank"
               >
                 Resume
               </a>
