@@ -20,6 +20,16 @@ const Experience = () => {
   });
   const { theme } = useTheme();
 
+
+  //Style for black experience cards
+  const blackContentStyle = { backgroundColor: "#0f172a",color: "#fff",  }
+  const blackIconStyle = { background: "#0f172a", color: "#fff", }
+  const blackContentArrowStyle = { borderRight: "7px solid  #0f172a" }
+  
+  //Style for blue experience cards
+  const blueContentStyle = { background: "rgb(33, 150, 243)", color: "#fff" }
+  const blueIconStyle ={ background: "rgb(33, 150, 243)", color: "#fff" }
+  const blueContentArrowStyle = { borderRight: "7px solid  rgb(33, 150, 243)" }
   return (
     <Section id="experience" divClassName="md:flex-col">
       {/* Heading */}
@@ -31,13 +41,40 @@ const Experience = () => {
           <VerticalTimelineElement
             className=""
             visible={inView}
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{
-              borderRight: "7px solid  rgb(33, 150, 243)",
-            }}
-            date="July 2024 - Present"
+            contentStyle={blueContentStyle}
+            contentArrowStyle={blueContentArrowStyle}
+            date="December 2024 - Present"
             dateClassName="dark:text-white text-black"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            iconStyle={blueIconStyle}
+            icon={<MdWork />}
+          >
+            <h3 className="">Software Developer</h3>
+            <h4 className="flex">
+              <a
+                className="underline underline-offset-2"
+                target="_blank"
+                href="https://kognics.ai"
+              >
+                Kognics.ai
+              </a>{" "}
+              <span className="flex items-center ml-3">
+                <GoLocation className="mr-1" /> Jaipur
+              </span>
+            </h4>
+            <p>
+              Worked on their CRM platform, created and Integrated REST APIs,
+              Worked on MySQL database
+            </p>
+            <p>React,Javascript, Node.js, MySQL</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className=""
+            visible={inView}
+            contentStyle={blackContentStyle}
+            contentArrowStyle={blackContentArrowStyle}
+            date="July 2024 - December 2024"
+            dateClassName="dark:text-white text-black"
+            iconStyle={blackIconStyle}
             icon={<MdWork />}
           >
             <h3 className="">Software Developer Intern</h3>
@@ -62,16 +99,11 @@ const Experience = () => {
           <VerticalTimelineElement
             className=""
             visible={inView}
-            contentStyle={{
-              backgroundColor: "#0f172a",
-              color: "#fff",
-            }}
+            contentStyle={blueContentStyle}
             date="Nov 2023 - May 2024"
             dateClassName="dark:text-white text-black"
-            iconStyle={{
-              background: "#0f172a",
-              color: "#fff",
-            }}
+            iconStyle={blueIconStyle}
+            contentArrowStyle={blueContentArrowStyle}
             icon={<MdWork />}
           >
             <h3 className="">Full Stack Intern</h3>

@@ -16,6 +16,11 @@ export const navItems = [
     href: "#experience",
   },
   {
+    id: 5,
+    title: "Testimonials",
+    href: "#testimonials",
+  },
+  {
     id: 4,
     title: "Contact",
     href: "#contact",
