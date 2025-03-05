@@ -20,16 +20,15 @@ const Experience = () => {
   });
   const { theme } = useTheme();
 
-
   //Style for black experience cards
-  const blackContentStyle = { backgroundColor: "#0f172a",color: "#fff",  }
-  const blackIconStyle = { background: "#0f172a", color: "#fff", }
-  const blackContentArrowStyle = { borderRight: "7px solid  #0f172a" }
-  
+  const blackContentStyle = { backgroundColor: "#0f172a", color: "#fff" };
+  const blackIconStyle = { background: "#0f172a", color: "#fff" };
+  const blackContentArrowStyle = { borderRight: "7px solid  #0f172a" };
+
   //Style for blue experience cards
-  const blueContentStyle = { background: "rgb(33, 150, 243)", color: "#fff" }
-  const blueIconStyle ={ background: "rgb(33, 150, 243)", color: "#fff" }
-  const blueContentArrowStyle = { borderRight: "7px solid  rgb(33, 150, 243)" }
+  const blueContentStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
+  const blueIconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
+  const blueContentArrowStyle = { borderRight: "7px solid  rgb(33, 150, 243)" };
   return (
     <Section id="experience" divClassName="md:flex-col">
       {/* Heading */}
@@ -43,7 +42,7 @@ const Experience = () => {
             visible={inView}
             contentStyle={blueContentStyle}
             contentArrowStyle={blueContentArrowStyle}
-            date="December 2024 - Present"
+            date="December 2024 - March 2025"
             dateClassName="text-white md:text-black dark:text-white"
             iconStyle={blueIconStyle}
             icon={<MdWork />}

@@ -9,4 +9,8 @@ export const skills = [
   "MongoDB",
   "Socket.io",
   "Typescript",
+  "PostgresSQL",
+  "Prisma",
+  "MySQL",
+  "Redux",
 ];
