@@ -105,7 +105,7 @@ const Experience = () => {
             contentArrowStyle={blueContentArrowStyle}
             icon={<MdWork />}
           >
-            <h3 className="">Full Stack Intern</h3>
+            <h3 className="">Full Stack Developer</h3>
             <h4 className="flex">
               <a
                 className="underline underline-offset-2"
